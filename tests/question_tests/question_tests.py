@@ -3,7 +3,10 @@ import unittest
 import random
 
 #follow this example to add questions b, c, and d for testing including their functions
-from src.question_a.question_a import get_random_number, test_config
+#from src.question_a.question_a import get_random_number, test_config
+from src.question_d.question_d import get_sum_of_evens, test_config
+#from src.question_c.question_c import get_day_of_week, test_config
+#from src.question_b.question_b import get_bonus_pay, test_config
 
 
 class Test_Config(unittest.TestCase):
@@ -41,3 +44,11 @@ def test_get_day_of_week():
 
 if __name__ == '__main__':
     test_get_day_of_week()
+
+def test_get_sum_of_evens():
+    assert get_sum_of_evens(11) == 30
+    assert get_sum_of_evens(10) == 30
+    assert get_sum_of_evens(8) == 20
+
+if __name__ == '__main__':
+    test_get_sum_of_evens()
