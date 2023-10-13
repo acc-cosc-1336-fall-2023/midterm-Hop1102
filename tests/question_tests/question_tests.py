@@ -30,4 +30,14 @@ def test_get_bonus_pay():
 
 if __name__ == '__main__':
     test_get_bonus_pay()
-    
+
+
+def test_get_day_of_week():
+    assert get_day_of_week(0) == "Invalid"
+    assert get_day_of_week(1) == "Monday"
+    assert get_day_of_week(2) == "Tuesday"
+    assert get_day_of_week(3) == "Wednesday"
+    assert get_day_of_week(8) == "Invalid"
+
+if __name__ == '__main__':
+    test_get_day_of_week()
