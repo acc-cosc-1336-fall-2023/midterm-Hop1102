@@ -19,3 +19,15 @@ class TestRandomNUmber(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main() 
+
+def test_get_bonus_pay():
+    assert get_bonus_pay(-1) == 'Invalid'
+    assert get_bonus_pay(200) == 10
+    assert get_bonus_pay(600) == 36
+    assert get_bonus_pay(1000) == 70
+    assert get_bonus_pay(1500) == 120
+    assert get_bonus_pay(2000) == 'Invalid'
+
+if __name__ == '__main__':
+    test_get_bonus_pay()
+    
