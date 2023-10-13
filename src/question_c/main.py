@@ -1,4 +1,5 @@
 #add import
+import question_c 
 
 def main():
     while True:
